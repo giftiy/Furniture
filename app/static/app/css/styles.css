@@ -1,0 +1,102 @@
+.goodnesseccont img{
+    width:100%;
+}
+
+/* General Body Style */
+body {
+    background-color: #F5F5DC; /* Warm Beige background */
+    background-image: url('{% static "app/images/background.jpg" %}'); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    color: #333333; /* Dark Gray text */
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+/* General Styles for Goodness Section */
+.goodnessec {
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: hidden; /* Ensure no overflow from child elements */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    margin-bottom: 20px; /* Space below each card */
+}
+
+/* Style for buttermilk */
+.buttermilk {
+    background-color: #f7f4e4; /* Soft beige color */
+    padding: 15px; /* Padding around the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.buttermilk:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Style for smbg */
+.smbg {
+    background-color: #ffffff; /* Bright white background */
+    border: 1px solid #e0e0e0; /* Light border for definition */
+    padding: 20px; /* Padding inside the container */
+}
+
+.smbg:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+/* Style for curdbgpro */
+.curdbgpro {
+    background-color: #e1f5fe; /* Light blue background */
+    padding: 15px; /* Padding around the content */
+    border-radius: 10px; /* More rounded corners */
+}
+
+.curdbgpro:hover {
+    transform: rotate(2deg); /* Slight rotation effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow effect on hover */
+}
+
+/* Responsive Images */
+.img-responsive {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Text Centering */
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+.mlkpro {
+    font-size: 1.2em; /* Increase font size for item names */
+    margin-top: 10px; /* Space above the text */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Custom Row Space */
+.row {
+    margin-left: -15px; /* Adjust for Bootstrap's padding */
+    margin-right: -15px;
+}
+
+
+
+/* Custom spacing for container */
+.container {
+    margin-top: 30px; /* Space above the container */
+    margin-bottom: 30px; /* Space below the container */
+    display: flex;
+    flex-wrap: wrap; /* Walitti makuu qindeessuu */
+    gap: 10px;
+}
+
+
+/* Custom margin for each column */
+.mi-do {
+    padding: 15px; /* Space around each column */
+}
+
+/* Optional: Space below each goodness section */
+.goodnessec {
+    margin-bottom: 20px; /* Space below each card */
+}

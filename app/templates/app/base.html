@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}" />
+    
+
+    <title>FURNITURE PRODUCT | {% block title %}{% endblock title %}</title>
+    <style>
+        body {
+            background-color: #F8F9FA; /* Light background for the body */
+        }
+        .navbar {
+            background-color: #9A6D4A; /* Updated color */
+        }
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: #FFFFFF; /* Light text for contrast */
+        }
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #FFD700; /* Gold for hover and active state */
+        }
+        .navbar .dropdown-menu {
+            background-color: #F5F5DC; /* Soft Beige for dropdown */
+        }
+        .navbar .dropdown-item {
+            color: #000000; /* Black for dropdown items */
+        }
+        .navbar .dropdown-item:hover {
+            background-color: #D2C19A; /* Lighter shade on hover */
+            color: #3B0A45; /* Dark text on hover */
+        }
+        footer {
+            background-color: #9A6D4A; /* Updated color */
+            color: #FFFFFF; /* Light text in footer */
+            text-align: center;
+            padding: 1.5em 0; /* Added padding for spacing */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #FFFFFF; /* Light color for links */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'app/images/product/logo.png' %}" width="70" height="50" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sofa</a></li>
+                            <li><a class="dropdown-item" href="#">Dining Table</a></li>
+                            <li><a class="dropdown-item" href="#">Bed</a></li>
+                            <li><a class="dropdown-item" href="#">Coffee Table</a></li>
+                            <li><a class="dropdown-item" href="#">Armchair</a></li>
+                            <li><a class="dropdown-item" href="#">Bookshelf</a></li>
+                            <li><a class="dropdown-item" href="#">Dresser</a></li>
+                            <li><a class="dropdown-item" href="#">Nightstand</a></li>
+                            <li><a class="dropdown-item" href="#">Desk</a></li>
+                            <li><a class="dropdown-item" href="#">Recliner</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle text-light" href="#"
+                       id="profileDropdown" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Gifti</a>
+                    <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Order</a></li>
+                      <li><a class="dropdown-item" href="#">Change Password</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#" class="nav-link text-light">Cart</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#" class="nav-link text-light">Order List</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#" class="nav-link text-light">Login</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a href="#" class="nav-link text-light">Registration</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    {% block banner-slider %}{% endblock banner-slider %}
+    {% block information %}{% endblock information %}
+
+
+    {% block main-content %}{% endblock main-content %}
+
+    <footer class="fixed-bottom">
+        <p>Copyright &copy; 2024 || Developed by <a href="#" title="Visit Developer's Site">Gifti Bulti</a></p>
+    </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="{% static 'app/css/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'app/css/owl.all.min.js' %}"></script>
+    <script src="{% static 'app/css/owl.myscript.min.js' %}"></script>
+</body>
+</html>

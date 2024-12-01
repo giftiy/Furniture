@@ -1,0 +1,146 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+{% block banner-slider %}
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/images/banner/bn.1.jpg'%}" class="d-block w-100" alt="banner images">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/bn.2.jpg'%}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/bn.4.jpg'%}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'app/images/banner/bn.4.jpg'%}" class="d-block w-100" alt="banner images">
+      </div>
+    </div>
+  </div>
+
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+    <div class="row text-center p-5 text-white border-bottom shadow" style="background-color: #9A6D4A;"> <!-- Custom color applied here -->
+        <h1>Product</h1>
+        <small class="fs-5">Explore our beautiful furniture collection that adds style and comfort to any room. 
+            We offer cozy sofas, stylish dining tables, useful storage solutions, and relaxing bedroom sets. 
+            Each piece is made with quality materials to last. Whether you like modern or classic looks, you'll 
+            find something perfect for your home or office.Transform your space with our furniture that combines 
+            elegance and everyday use!</small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+    <h1 class="text-center py-5">Furniture Products</h1>
+    
+    
+    <div class="row">
+        
+        <div class="col-md-4 mb-4"> <!-- Column for each card -->
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;"><!-- Increased height -->
+                <a href="#">
+                    <img src="{% static 'app/images/product/sofa.jpg' %}" class="card-img-top" alt="Sofa" style="height: 300px; object-fit: cover;"> <!-- Adjusted image height -->
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Sofa</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/recliner.jpg' %}" class="card-img-top" alt="Recline" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Recliner</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/nightstand.jpg' %}" class="card-img-top" alt="Nighstand" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Nighstand</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4"> <!-- Column for each card -->
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;"> <!-- Increased height -->
+                <a href="#">
+                    <img src="{% static 'app/images/product/dresser.jpg' %}" class="card-img-top" alt="Dresser" style="height: 300px; object-fit: cover;"> <!-- Adjusted image height -->
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Dresser</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/dining.jpg' %}" class="card-img-top" alt="Dining" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Dining</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/desk.jpg' %}" class="card-img-top" alt="Desk" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Desk</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4"> <!-- Column for each card -->
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;"> <!-- Increased height -->
+                <a href="#">
+                    <img src="{% static 'app/images/product/coffee.jpg' %}" class="card-img-top" alt="Coffee" style="height: 300px; object-fit: cover;"> <!-- Adjusted image height -->
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Coffee Table</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/bed.jpg' %}" class="card-img-top" alt="Bed" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Bed</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm h-100" style="height: 400px; background-color: #9A6D4A;">
+                <a href="#">
+                    <img src="{% static 'app/images/product/armchair.jpg' %}" class="card-img-top" alt="Armchair" style="height: 300px; object-fit: cover;">
+                </a>
+                <div class="card-body text-center text-light">
+                    <h5 class="card-title">Armchair</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+{% endblock main-content %}
