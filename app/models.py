@@ -9,7 +9,7 @@ class Product(models.Model):
         ('dresser', 'Dresser'),
         ('dining', 'Dining Table'),
         ('desk', 'Desk'),
-        ('coffee_table', 'Coffee Table'),
+        ('coffee', 'Coffee Table'),
         ('bed', 'Bed'),
         ('armchair', 'Armchair'),
     ]
@@ -24,3 +24,5 @@ class Product(models.Model):
 
     def __str__(self):
         return self.title
+  
+  
